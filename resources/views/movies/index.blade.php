@@ -1,4 +1,5 @@
 @extends('layouts.main')
+
 @section('content')
-    <h1 class="text-primary">ciao</h1>
+    <h1>Movie index</h1>
 @endsection
