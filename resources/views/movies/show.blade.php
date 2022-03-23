@@ -6,7 +6,7 @@
         <div class="movie-gallery">
             <div class="col">
                 <a href="{{route('movies.show', $movie->id)}}">
-                    <div class="movie-card h-100">
+                    <div class="movie-card">
                         <h4 >{{$movie->title}}</h4>
                         <h5 class="card-title">{{$movie->original_title}}</h5>
                         <small><p class="card-text">{{$movie->date}}</p></small>
@@ -15,6 +15,7 @@
                         </div>
                     </div>
                 </a>
+                {{-- TODO: sistemare card singole, aggiungere bottone back, separare carta come includes, aggiungere logica ratings --}}
             </div>
         </div>
     </div>
