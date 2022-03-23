@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    background-image: url(https://hotelvillabonomo.it/wp-content/uploads/2021/07/film-festival_m.jpg);
+    background-color: #040507;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    flex-grow: 1;
+}

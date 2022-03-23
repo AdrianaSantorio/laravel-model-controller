@@ -1,0 +1,21 @@
+header {
+    background-color: #d8bea3;
+    height: 70px;
+    font-family: "Palette Mosaic", cursive;
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        li {
+            margin: 0 20px;
+        }
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+}

@@ -15,5 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/movies', 'MovieController@index')->name('movies.index');
-//Route::get('/movies{id}', 'MovieController@show')->name('Movies.show');
+//Route::get('/movies', 'MovieController@index')->name('movies.index');
+//Route::get('/movies/{movie}', 'MovieController@show')->name('movies.show');
+
+Route::prefix('/movies')->name('movies.')->group(function () {
+
+    Route::get('/', 'MovieController@index')->name('index');
+    Route::get('/{movie}', 'MovieController@show')->name('show');
+});

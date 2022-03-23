@@ -1,0 +1,38 @@
+.gallery-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    .movie-gallery {
+        flex-basis: 50%;
+        color: wheat;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: -30px;
+    }
+
+    .col {
+        padding: 15px;
+        flex-basis: calc(100% / 2);
+    }
+
+    .movie-card {
+        background-color: #a17f63;
+        height: 100px;
+        padding: 10px;
+        transition: 0.5s filter linear;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:hover {
+            filter: brightness(140%);
+        }
+
+        .rating {
+            text-align: right;
+        }
+    }
+}
